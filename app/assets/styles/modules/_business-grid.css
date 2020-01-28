@@ -1,0 +1,36 @@
+.business-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  @mixin fade {
+    
+  }
+
+  li {
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      display: block;
+
+      img {
+        max-width: 250px;
+        margin-bottom: 10px;
+      }
+
+      &:hover img {
+        border: solid 1px #000000 ;
+      }
+    }
+  }
+
+  h3, p {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+  }
+}
+

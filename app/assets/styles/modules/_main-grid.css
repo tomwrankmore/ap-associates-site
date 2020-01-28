@@ -1,0 +1,23 @@
+.grid-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 0% 1fr 0%;
+  height: 100vh;
+  max-width: 1024px;
+  margin: 0 auto;
+
+  @mixin atMedium {
+    grid-template-columns: 20% 1fr 20%;
+  }
+
+  header {
+    grid-column: 2 / 3;
+    grid-row: 1;
+  }
+
+  section {
+    grid-column: 2 / 3;
+    grid-row: 2;
+  }
+}
+

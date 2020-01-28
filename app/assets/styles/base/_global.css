@@ -3,8 +3,17 @@ html {
 }
 
 body {
-  font-family: 'roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #333;
+  background: rgb(249,245,238);
+  background: linear-gradient(180deg, rgba(249,245,238,1) 50%, rgba(255,255,255,1) 100%);
+  min-height: 100vh;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 img {
@@ -17,5 +26,10 @@ img {
 }
 
 a {
-  color: $mainOrange;
+  color: #000;
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.6rem;
 }

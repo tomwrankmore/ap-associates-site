@@ -1,0 +1,11 @@
+.btn {
+  display: block;
+  padding: 5px 0;
+  width: min-content;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    margin-left: 3px;
+  }
+}

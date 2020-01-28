@@ -5,17 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>AP.Associates</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>AP.ASSOCIATES</h1>
-    <nav class="primary-nav">
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Clients</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="site-header">
+      <div class="wrapper">
+        <h1 class="site-header__logo"><a href="index.html">AP.ASSOCIATES</a></h1>
+        <div class="site-header__menu-icon">
+          <div class="site-header__menu-icon__middle"></div>
+          </div>
+          <div class="site-header__menu-content">
+            <nav class="primary-nav primary-nav--pull-right">
+              <ul>
+                <li><a href="about.html">about</a></li>
+                <li><a href="#" aria-haspopup="true">clients</a>
+                  <ul class="nested">
+                    <li><a href="artists.html">artists</a></li>
+                    <li><a href="business.html">business</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html">contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          </div>
+      </header>
+  <section class="main-content">
+    
+    <div class="wrapper wrapper__align-flex-end">
+      <h3 class="main-content__intro border-bottom">We are a legal consultancy based in London which specialises in music.</h3>
+    </div>
+  </section>
 </body>
 </html>

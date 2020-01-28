@@ -1,0 +1,33 @@
+.home-content {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 9em;
+  top: 0;
+  
+  
+  &__intro {
+    font-size: 1rem;
+    max-width: 450px;
+    position: relative;
+    font-weight: 200;
+    border-bottom: solid 10px #000;
+    padding-bottom: 1rem;
+    text-align: left;
+    margin: 5rem auto 0 auto;
+    animation: heading;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+
+      @mixin atMedium {
+        font-size: 1.25rem;
+        padding-top: 0;
+        margin: 5rem 0;
+        align-items: flex-start;
+      }
+  }
+
+  @keyframes heading {
+    0% {top: 20px; opacity: 0;}
+    100% {top: 0px; opacity: 1;}
+  }
+}

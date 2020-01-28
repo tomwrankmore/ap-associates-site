@@ -25,6 +25,8 @@
     /*transition: transform 0.3s ease-out;*/
     transform: translateX(-50%);
     font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    z-index: 100;
 
     @mixin atMedium {
       top: 22px;
@@ -104,7 +106,6 @@
   }
   &__menu-content {
     opacity: 0;
-    /*transform: scale(1.2);*/
     transition: all 0.3s ease-out;
     position: relative;
     z-index: -10;

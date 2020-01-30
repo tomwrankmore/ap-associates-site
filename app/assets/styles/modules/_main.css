@@ -1,0 +1,7 @@
+main {
+  padding: 80px 0 2rem 0;
+
+  @mixin atSmall {
+    padding: 120px 0 2rem 0;
+  }
+}

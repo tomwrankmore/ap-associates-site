@@ -3,7 +3,7 @@
   align-items: flex-start;
   padding-top: 9em;
   top: 0;
-  min-height: 100vh;
+  min-height: 100%;
   
   
   &__intro {

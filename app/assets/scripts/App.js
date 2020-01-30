@@ -3,7 +3,6 @@ import 'lazysizes'
 import MobileMenu from './modules/MobileMenu'
 
 new MobileMenu();
-
 let i = 0;
 let images = [];
 let time = 2000;

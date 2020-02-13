@@ -4,7 +4,7 @@ import MobileMenu from './modules/MobileMenu'
 
 new MobileMenu();
 
-if(module.hot) {
+if (module.hot) {
   module.hot.accept()
 }
 

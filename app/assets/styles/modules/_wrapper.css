@@ -1,22 +1,20 @@
 .wrapper {
-  padding-left: 18px;
-  padding-right: 18px;
+  padding: 0;
   max-width: 1006px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  @mixin fade {
-    
-  }
-  
+
+  @mixin fade {}
+
   @mixin atMedium {
+    padding-left: 18px;
+    padding-right: 18px;
     width: 100%;
     /*align-self: center;*/
   }
 
-  @mixin clearfix {
-    
-  }
+  @mixin clearfix {}
 
   &__border-bottom {
     border-bottom: solid 2px #000000;
@@ -24,9 +22,8 @@
 
   &__main-content {
     position: relative;
-    @mixin fade {
-      
-    }
+
+    @mixin fade {}
 
     * {
       max-width: 620px;

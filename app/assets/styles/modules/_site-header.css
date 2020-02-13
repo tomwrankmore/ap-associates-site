@@ -14,7 +14,7 @@
   @mixin atMedium {
     position: fixed;
     padding: 10px 0;
-    background-color: rgb(249,245,238);
+    background-color: rgb(249, 245, 238);
   }
 
   &__logo {
@@ -37,7 +37,7 @@
     }
 
     @mixin atMedium {
-      top: 22px;
+      top: 12px;
       left: auto;
       transform: translateX(0%);
       transform-origin: 0 0;
@@ -58,7 +58,7 @@
     z-index: 10;
     transition: all 0.3s ease-out;
     transform: translateX(0);
-  
+
     &:hover {
       cursor: pointer;
     }
@@ -74,6 +74,7 @@
       transform-origin: 0 0;
       transition: transform 0.3s ease-out;
     }
+
     &__middle {
       position: absolute;
       top: 8px;
@@ -84,6 +85,7 @@
       transition: all 0.3s ease-out;
       transform-origin: 0 50%;
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -95,6 +97,7 @@
       transition: transform 0.5s ease-out;
       transform-origin: 0 100%;
     }
+
     @mixin atMedium {
       transform: translateX(100px);
     }
@@ -103,15 +106,18 @@
       &::before {
         transform: rotate(45deg) scaleX(1.25);
       }
+
       &::after {
         transform: rotate(-45deg) scaleX(1.25) translateY(1px);
       }
+
       .site-header__menu-icon__middle {
         opacity: 0;
         transform: scaleX(0);
       }
     }
   }
+
   &__menu-content {
     opacity: 0;
     transition: all 0.3s ease-out;

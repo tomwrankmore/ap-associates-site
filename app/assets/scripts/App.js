@@ -1,10 +1,12 @@
 import '../styles/styles.css'
 import 'lazysizes'
 import MobileMenu from './modules/MobileMenu'
+import Modal from './modules/Modal'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 new MobileMenu();
+new Modal();
 
 if (module.hot) {
   module.hot.accept()
@@ -15,13 +17,10 @@ if (module.hot) {
 
 AOS.init({
   easing: 'ease-in-out',
-  duration: 500,
+  duration: 700,
   delay: 0,
   once: true,
   mirror: false,
   disable: 'mobile',
   anchorPlacement: 'top-center',
 });
-// window.addEventListener('load', function () {
-//   AOS.refresh();
-// });

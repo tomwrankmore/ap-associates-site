@@ -2,9 +2,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 1rem;
-  @mixin fade {
-    
-  }
+
 
   li {
     padding-bottom: 10px;
@@ -15,22 +13,28 @@
 
     a {
       display: block;
+      width: 250px;
+      height: 250px;
+      overflow: hidden;
+      margin-bottom: 10px;
 
       img {
         max-width: 250px;
-        margin-bottom: 10px;
+
+        transition: all .4s ease-in-out;
       }
 
       &:hover img {
-        border: solid 1px #000000 ;
+        transform: scale(1.2);
+        transform: scale(1.1);
       }
     }
   }
 
-  h3, p {
+  h3,
+  p {
     margin: 0;
     padding: 0;
     text-align: right;
   }
 }
-

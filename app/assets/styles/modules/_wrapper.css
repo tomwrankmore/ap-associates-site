@@ -29,4 +29,8 @@
       max-width: 620px;
     }
   }
+
+  &--narrow {
+    max-width: 470px;
+  }
 }

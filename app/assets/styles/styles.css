@@ -5,13 +5,11 @@
 @import 'modules/_site-header.css';
 @import 'modules/_primary-nav.css';
 @import 'modules/_wrapper.css';
-@import 'modules/_main-content.css';
 @import 'modules/_section.css';
-@import 'modules/_main.css';
 @import 'modules/_client-grid.css';
 @import 'modules/_big-hero.css';
-@import 'modules/_about-grid.css';
 @import 'modules/_business-grid.css';
 @import 'modules/_border-bottom.css';
 @import 'modules/_button.css';
+@import 'modules/_modal.css';
 @import 'modules/_footer.css';

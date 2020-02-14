@@ -1,5 +1,5 @@
 .big-hero {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     padding-top: 5rem;
     flex-direction: column;
@@ -102,15 +102,14 @@
     }
 
     h3 {
-
-        padding: .75rem;
+        padding: 0;
         display: block;
         max-width: 600px;
         font-size: 22px;
-        margin: 0;
+        margin-bottom: 1rem;
         position: relative;
         z-index: 1;
-        text-align: center;
+        /* text-align: center; */
 
         @mixin atSmall {
             background-color: #fff;
@@ -144,15 +143,15 @@
         color: black;
         padding: 0;
         display: block;
-        max-width: 500px;
-        margin: 0 auto;
         z-index: 1;
         font-size: 12px;
-        text-align: center;
+        margin: 0;
+        /* text-align: center; */
 
 
 
         @mixin atSmall {
+            max-width: 500px;
             color: white;
             line-height: 2.4rem;
             margin: 0 0 0 2rem;
@@ -175,7 +174,7 @@
     &__btn {
         display: block;
         border: solid 1px #000;
-        margin: 0 auto;
+        margin: 0;
         padding: 0.5rem 0.5rem;
         background-color: #fff;
         cursor: pointer;

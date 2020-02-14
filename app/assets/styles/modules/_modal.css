@@ -23,6 +23,7 @@
         flex: 1;
         margin: auto;
         max-width: 470px;
+        padding: 0 19px;
     }
 
     &__title {

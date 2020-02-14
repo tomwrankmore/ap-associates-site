@@ -37,7 +37,7 @@
     }
 
     @mixin atMedium {
-      top: 12px;
+      top: 17px;
       left: auto;
       transform: translateX(0%);
       transform-origin: 0 0;

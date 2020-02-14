@@ -1,13 +1,14 @@
 .big-hero {
     min-height: 100vh;
     display: flex;
+    padding-top: 5rem;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
     background-color: rgba(black, black, black, 0.5);
 
-    &::after {
+    /* &::after {
         content: "";
         background: url(../../assets/images/home-slide/home-slide-0.png) no-repeat top right;
         background-size: cover;
@@ -18,9 +19,11 @@
         right: 0;
         position: absolute;
         z-index: -1;
-    }
+    } */
 
     @mixin atSmall {
+        padding-top: 0;
+        justify-content: center;
         background-image: none;
         min-height: 650px;
         background-color: black;
@@ -99,17 +102,20 @@
     }
 
     h3 {
-        background-color: #fff;
-        padding: 1rem 1rem 1rem 2rem;
+
+        padding: .75rem;
         display: block;
         max-width: 600px;
-        font-size: 31px;
+        font-size: 22px;
         margin: 0;
         position: relative;
         z-index: 1;
         text-align: center;
 
         @mixin atSmall {
+            background-color: #fff;
+            padding: 1rem 1rem 1rem 2rem;
+            margin: 0;
             text-align: left;
             font-size: calc(22px + 8 * ((100vw - 530px) / 960));
             margin: 0 0 1rem -18px;
@@ -163,6 +169,22 @@
             & {
                 font-size: 18px;
             }
+        }
+    }
+
+    &__btn {
+        display: block;
+        border: solid 1px #000;
+        margin: 0 auto;
+        padding: 0.5rem 0.5rem;
+        background-color: #fff;
+        cursor: pointer;
+        margin-top: 1rem;
+        z-index: 2;
+
+        @mixin atSmall {
+            margin: 16px 0 0 2rem;
+
         }
     }
 }

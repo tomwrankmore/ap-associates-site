@@ -1,6 +1,6 @@
 .intro-text {
     margin-bottom: 2rem;
-    padding: 4rem;
+    padding: 1rem;
     text-align: center;
 
     /* p {
@@ -8,6 +8,8 @@
     } */
     @mixin fade {}
 
-
+    @mixin atSmall {
+        padding: 4rem;
+    }
 
 }

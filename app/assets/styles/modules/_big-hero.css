@@ -22,8 +22,8 @@
     } */
 
     @mixin atSmall {
-        padding-top: 0;
-        justify-content: center;
+        padding-top: 100px;
+        /* justify-content: center; */
         background-image: none;
         min-height: 650px;
         background-color: black;
@@ -104,11 +104,12 @@
     h3 {
         padding: 0;
         display: block;
-        max-width: 600px;
+        max-width: 720px;
         font-size: 22px;
         margin-bottom: 1rem;
         position: relative;
         z-index: 1;
+        font-weight: 500;
         /* text-align: center; */
 
         @mixin atSmall {
@@ -116,7 +117,8 @@
             padding: 1rem 1rem 1rem 2rem;
             margin: 0;
             text-align: left;
-            font-size: calc(22px + 8 * ((100vw - 530px) / 960));
+            /* font-size: calc(22px + 8 * ((100vw - 530px) / 960)); responsive text*/
+            font-size: 20px;
             margin: 0 0 1rem -18px;
 
             &::after {
@@ -132,11 +134,11 @@
             }
         }
 
-        @mixin atLarge {
+        /* @mixin atLarge {
             & {
                 font-size: 31px;
             }
-        }
+        } */
     }
 
     p {

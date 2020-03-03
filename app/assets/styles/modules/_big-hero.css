@@ -1,5 +1,4 @@
 .big-hero {
-    /* min-height: 100vh; */
     display: flex;
     padding-top: 5rem;
     flex-direction: column;
@@ -22,7 +21,7 @@
     } */
 
     @mixin atSmall {
-        padding-top: 100px;
+        padding-top: 150px;
         /* justify-content: center; */
         background-image: none;
         min-height: 650px;
@@ -102,26 +101,31 @@
     }
 
     h3 {
-        padding: 0;
+        font-family: 'DM Sans', sans-serif;
+        padding: 0 0 15px 0;
         display: block;
-        max-width: 720px;
         font-size: 22px;
-        margin-bottom: 1rem;
+        font-weight: bold;
+        margin: 0;
+        max-width: 420px;
         position: relative;
         z-index: 1;
         font-weight: 500;
+        border-bottom: solid 10px #000;
         /* text-align: center; */
 
         @mixin atSmall {
+            /* border-bottom: none; */
+            max-width: 100%;
             background-color: #fff;
-            padding: 1rem 1rem 1rem 2rem;
+            padding: 1rem;
             margin: 0;
             text-align: left;
             /* font-size: calc(22px + 8 * ((100vw - 530px) / 960)); responsive text*/
             font-size: 20px;
-            margin: 0 0 1rem -18px;
+            margin: 0 18px 0 18px;
 
-            &::after {
+            /* &::after {
                 content: "";
                 width: 0;
                 height: 0;
@@ -131,7 +135,7 @@
                 position: absolute;
                 left: 0;
                 bottom: -18px;
-            }
+            } */
         }
 
         /* @mixin atLarge {

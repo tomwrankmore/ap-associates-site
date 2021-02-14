@@ -7,6 +7,8 @@ const fse = require('fs-extra')
 
 const postCSSPlugins = [
   require('postcss-import'),
+  require('postcss-for'),
+  require('postcss-calc'),
   require('postcss-mixins'),
   require('postcss-simple-vars'),
   require('postcss-nested'),
@@ -33,6 +35,7 @@ let cssConfig = {
 let pages = fse.readdirSync('./app').filter(function(file){
   return file.endsWith('.html')
 }).map(function(page){
+  console.log(page)
   return new HtmlWebpackPlugin({//runs HtmlWebpackPlugin on each page returned in array.
     filename: page, //generates file automatically so can be same name as template, page = whichever file has been looped to index, about etc
     template: `./app/${page}`

@@ -1,0 +1,22 @@
+.blackOverlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #111;
+    position: fixed;
+    z-index: 10;
+
+    h1.overlayHeader {
+        color: #f9f5ee;
+        font-size: 2.4rem;
+        letter-spacing: 0.2rem;
+        visibility: hidden;
+    }
+}
+
+.container {
+    clip-path: inset(0 0 0 0);
+}
+

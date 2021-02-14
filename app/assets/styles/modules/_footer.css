@@ -1,10 +1,14 @@
 footer {
   bottom: 0;
   width: 100%;
-  display: none;
+  color: #000;
+  background-color: #aeaeae;
+  z-index: 22;
+  padding: 5px 0;
 
   @mixin atSmall {
     display: block;
+    position: fixed;
   }
 
   &__footer {
@@ -12,8 +16,10 @@ footer {
   }
 
   p {
-    text-align: right;
-    font-size: 0.8rem;
+    text-align: center;
+    font-size: 0.7rem;
+    line-height: normal;
+    color: white;
   }
 
   @mixin clearfix {}

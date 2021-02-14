@@ -1,16 +1,22 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 .wrapper {
-  padding-left: 18px;
-  padding-right: 18px;
-  max-width: 1006px;
+  padding: 0;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 
-  @mixin fade {}
+  /* @mixin fade {}*/
 
-  /* @mixin atMedium {
-    width: 100%;
-  } */
+ @mixin atMedium {
+  padding-left: 18px;
+  padding-right: 18px;
+  } 
 
   @mixin clearfix {}
 
@@ -21,7 +27,7 @@
   &__main-content {
     position: relative;
 
-    @mixin fade {}
+    /*@mixin fade {}*/
 
     * {
       max-width: 620px;
@@ -31,4 +37,8 @@
   &--narrow {
     max-width: 470px;
   }
+}
+
+.split-para {
+  visibility: hidden;
 }

@@ -1,148 +1,67 @@
-.big-hero {
-    display: flex;
-    padding-top: 5rem;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+/* .big-hero {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     position: relative;
-    background-color: rgba(black, black, black, 0.5);
+    height: 100vh;
+    align-items: center;
 
-    /* &::after {
+    &::before {
         content: "";
-        background: url(../../assets/images/home-slide/home-slide-0.png) no-repeat top right;
-        background-size: cover;
         opacity: 0.25;
+        top: 0;
+        width: 100vw;
+        height: 100%;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+    }
+
+    &::after {
+        content: "";
+        background-image: linear-gradient(45deg, #f9f5ef 33.33%, #000000 33.33%, #000000 50%, #f9f5ef 50%, #f9f5ef 83.33%, #000000 83.33%, #000000 100%);
+        background-size: 4.24px 4.24px;;
+        opacity: 0.2;
         top: 0;
         left: 0;
         bottom: 0;
         right: 0;
         position: absolute;
-        z-index: -1;
-    } */
+        z-index: 0;   
+    }
 
     @mixin atSmall {
-        padding-top: 150px;
-        /* justify-content: center; */
-        background-image: none;
-        min-height: 650px;
-        background-color: black;
+
     }
 
-    &>figure {
-        animation: imageAnimation 30s linear infinite 0s;
-        backface-visibility: hidden;
-        background-size: cover;
-        display: none;
-        background-position: top right;
-        color: transparent;
+    .homeImg {
+        grid-column: 4/6;
+        grid-row: 1;
+        justify-self: end;
+        z-index: 1;
         height: 100%;
-        left: 0px;
-        opacity: 0;
-        position: absolute;
-        top: 0px;
-        width: 100%;
-        z-index: 0;
-        padding: 0;
-        margin: 0;
-
-        @mixin atSmall {
-            display: block;
-        }
-    }
-
-
-
-    &>figure:nth-child(1) {
-        background-image: url(assets/images/home-slide/home-slide-0.png);
-    }
-
-    &>figure:nth-child(2) {
-        animation-delay: 6s;
-        background-image: url(assets/images/home-slide/home-slide-1.png);
-    }
-
-    &>figure:nth-child(3) {
-        animation-delay: 12s;
-        background-image: url(assets/images/home-slide/home-slide-2.png);
-    }
-
-    &>figure:nth-child(4) {
-        animation-delay: 18s;
-        background-image: url(assets/images/home-slide/home-slide-3.png);
-    }
-
-    &>figure:nth-child(5) {
-        animation-delay: 24s;
-        background-image: url(assets/images/home-slide/home-slide-4.png);
-    }
-
-    @keyframes imageAnimation {
-        0% {
-            animation-timing-function: ease-in;
-            opacity: 0;
-        }
-
-        8% {
-            animation-timing-function: ease-out;
-            opacity: 1;
-        }
-
-        17% {
-            opacity: 1;
-        }
-
-        25% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 0;
-        }
+        object-fit: cover;
+        opacity: 0.5;
+        mix-blend-mode: multiply;
     }
 
     h3 {
-        font-family: 'DM Sans', sans-serif;
-        padding: 0 0 15px 0;
-        display: block;
-        font-size: 22px;
-        font-weight: bold;
-        margin: 0;
-        max-width: 420px;
-        position: relative;
-        z-index: 1;
-        font-weight: 500;
-        border-bottom: solid 10px #000;
-        /* text-align: center; */
+        padding: 2rem;
+        font-size: clamp(1.4rem, 3vw, 3.25rem);
+        z-index: 2;
+        color: #121212;
+        text-align: center;
+        grid-column: 2/5;
+        grid-row: 1;
+        font-family: 'Arimo', sans-serif;
+        border-left: solid 1rem #000;
+        background-color: $mainBeige;
+        max-width: 50rem;
+        
 
-        @mixin atSmall {
-            /* border-bottom: none; */
-            max-width: 100%;
-            background-color: #fff;
-            padding: 1rem;
-            margin: 0;
+        @mixin atMedium {
             text-align: left;
-            /* font-size: calc(22px + 8 * ((100vw - 530px) / 960)); responsive text*/
-            font-size: 20px;
-            margin: 0 18px 0 18px;
-
-            /* &::after {
-                content: "";
-                width: 0;
-                height: 0;
-                border-top: 0px solid transparent;
-                border-right: 18px solid #555;
-                border-bottom: 18px solid transparent;
-                position: absolute;
-                left: 0;
-                bottom: -18px;
-            } */
+            line-height: 4.25rem;
         }
-
-        /* @mixin atLarge {
-            & {
-                font-size: 31px;
-            }
-        } */
     }
 
     p {
@@ -152,9 +71,6 @@
         z-index: 1;
         font-size: 12px;
         margin: 0;
-        /* text-align: center; */
-
-
 
         @mixin atSmall {
             max-width: 500px;
@@ -192,4 +108,4 @@
 
         }
     }
-}
+} */

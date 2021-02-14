@@ -1,0 +1,10 @@
+.parentLines {
+    /* background-color: #f9f5ee;
+    display: inline;
+    padding: 0 .45rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    max-width: fit-content;
+    margin-bottom: 6px; */
+    overflow: hidden;
+}

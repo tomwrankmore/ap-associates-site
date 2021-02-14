@@ -1,0 +1,56 @@
+section.business {
+  padding: 70px 0 70px 0;
+}
+
+.business-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem 2rem;
+  visibility: hidden;
+
+
+
+  li {
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px #bbb;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+
+    @mixin atSmall {
+      margin-bottom: none;
+      border-bottom: none;
+      padding-bottom: none;
+    }
+
+    a {
+      display: block;
+      width: 250px;
+      height: 250px;
+      overflow: hidden;
+      margin-bottom: 10px;
+      
+
+      img {
+        max-width: 250px;
+        /* mix-blend-mode: darken; */
+        transition: transform .4s ease-in-out;
+      }
+
+      &:hover img {
+        transform: scale(1.2);
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  h3,
+  p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+}

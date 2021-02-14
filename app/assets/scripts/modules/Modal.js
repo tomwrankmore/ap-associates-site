@@ -21,17 +21,18 @@ class Modal {
         this.modal.classList.remove("modal--is-visible")
     }
 
-    injectHTML() {
-        document.body.insertAdjacentHTML('beforeend', `
-          <section class="modal">
-              <div class="modal__inner">
-              <h3 class="modal__title">Contact</h3><p class="border-bottom modal__description">If you would like to find out more about the
-          services we provide, please email us: <br> <a href="mailto:AP@AP.ASSOCIATES" class="btn">ap@ap.associates</a></p>
-              </div>
-              <div class="modal__close">X</div></section>
-        `)
-    }
-
+    // injectHTML() {
+    //     document.body.insertAdjacentHTML('beforeend', `
+    //       <section class="modal">
+    //           <div class="modal__inner">
+    //           <h3 class="modal__title">Contact</h3><p class="modal__description">If you would like to find out more about the
+    //       services we provide, please email us: <br> <a href="mailto:AP@AP.ASSOCIATES" class="btn">ap@ap.associates</a></p>
+    //       <span class="border-bottom"></span>
+    //           </div>
+    //           <div class="modal__close">X</div>
+    //         </section>
+    //     `)
+    // }
 }
 
 export default Modal

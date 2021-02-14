@@ -1,8 +1,0 @@
-.border-bottom {
-  border-bottom: solid 10px #000;
-  padding-bottom: 1rem;
-
-  &__thin {
-    border-bottom: solid 5px #000;
-  }
-}

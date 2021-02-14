@@ -5,6 +5,7 @@ class MobileMenu {
     this.siteHeader = document.querySelector(".site-header")
     this.events()
   }
+  
   events() {
     this.menuIcon.addEventListener("click", () => this.toggleTheMenu())
   }

@@ -34,21 +34,27 @@
       }
       a {
         text-decoration: none;
+        opacity: 0;
+        /* visibility: hidden; */
         padding: 1rem;
         display: block;
+        z-index: 100;
         background: transparent;
-        
+        transition: all 0.1s ease-out;
+        @mixin atMedium {
+          opacity: 1;
+        }
       }
     }
 
     li:hover,
     li:focus-within {
-      background: white;
+      background: transparent;
       cursor: pointer;
     }
 
     .nested {
-      background: #fff;
+      background: $mainBeige;
       visibility: hidden;
       opacity: 0;
       min-width: 7rem;

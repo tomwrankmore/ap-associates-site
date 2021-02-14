@@ -8,6 +8,9 @@ body {
   background: rgb(249, 245, 238);
   /*background: linear-gradient(180deg, rgba(249,245,238,1) 50%, rgba(255,255,255,1) 100%);*/
   /* min-height: 100vh; */
+  --cursor-stroke: none;
+	--cursor-fill: #8a7d73;
+  --cursor-stroke-width: 1px;
 }
 
 ul,

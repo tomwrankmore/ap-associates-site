@@ -29,12 +29,12 @@ div.landingGrid {
 
   h1 {
     z-index: 4;
-    font-size: clamp(1.5rem, 2.875rem, 3.4rem);;
+    
     grid-column: 1/5;
     grid-row: 2/3;
     margin: 0;
     padding: 0 2rem;
-    line-height: 4.15rem;
+    
     align-self: center;
     /* text-shadow: 0px 0px 10px #000000; */
     overflow: hidden;
@@ -51,7 +51,8 @@ div.landingGrid {
     }
 
     @mixin atSmall {
-      /* font-size: 2.25rem; */
+      font-size: 2.25rem;
+      line-height: 3rem;
       margin: 0 2rem;
       max-width: 100%;
       grid-column: 1/4;
@@ -60,6 +61,8 @@ div.landingGrid {
 
     @mixin atMedium {
       max-width: 60%;
+      font-size: 2.875rem;
+      line-height: 4.15rem;
     }
 
     @mixin atLarge {

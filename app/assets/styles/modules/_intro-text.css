@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: column;
     width: 90vw;
+    @mixin atMedium {
+        width: auto;
+    } 
     margin: 0 auto;
 
     @mixin atMedium {

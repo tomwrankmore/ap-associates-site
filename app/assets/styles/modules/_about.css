@@ -3,13 +3,22 @@ section.about {
 }
 
 .about-us {
-  text-align: center;
-  height: 50vh;
+  
+  @mixin atMedium {
+    width: 75%;
+    padding: 0;
+    height: 50vh;
+  }
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: solid 1px #333;
+  /* border-bottom: solid 1px #333; */
+
+  h1 {
+      margin: 4rem 0 0rem 0;
+  }
 
   p {
     @mixin atMedium {
@@ -19,5 +28,6 @@ section.about {
     width: 100%;
     padding: 0 2rem;
     margin-bottom: 1rem;
+    text-align: center;
   }
 }

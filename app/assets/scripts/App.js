@@ -10,10 +10,10 @@ import { SplitText } from "gsap/SplitText";
 import Cursor from './modules/cursor';
 
 import { smoothScroll, MouseFollow, borderBottom, landingPageAnim, splitParagraph, MyMobileMenu, MobileMenu, Modal, MyModal, sliderFunc } from './modules'; /* Import animation functions */
-import { showModal, hideModal, homeEnter, homeLeave, aboutEnter, aboutLeave, artistEnter, artistLeave, businessEnter, businessLeave } from './animations'; /* Import animation functions */
+import { showModal, hideModal, homeEnter, homeLeave, aboutEnter, aboutLeave, artistEnter, artistLeave, businessEnter, businessLeave, contactEnter, contactLeave } from './animations'; /* Import animation functions */
 
 new MobileMenu();
-new MyModal();
+// new MyModal();
 
 // hot modules means that webpack generates javascript file to memory rather than creating a file...
 if (module.hot) {
@@ -74,11 +74,24 @@ function init() {
           smoothScroll(next.container);
           splitParagraph(next.container)
         }
+      },
+      {
+        namespace: 'contact',
+        beforeEnter({ next }) {
+          killTriggers()
+          smoothScroll(next.container);
+          splitParagraph(next.container)
+        }
       }
     ],
     transitions: [
       {
         name: 'default-transition',
+        once({ next }) {
+          gsap.to('.site-header', {
+            autoAlpha: 1
+          })
+        },
         leave: ({ current }) => {
           return gsap.to(current.container, {
             autoAlpha: 0,
@@ -92,6 +105,18 @@ function init() {
           });
         }
       },
+      {
+          name: 'to-home',
+          to: { namespace: ['home'] },
+          once({ next }) {
+            gsap.to('.site-header', {
+              autoAlpha: 1
+            })
+            landingPageAnim(next.container)
+          },
+          leave: ({ current }) => { return homeLeave(current.container) },
+          enter({ next }) { homeEnter(next.container) }
+        },
 
       /** HOME TRANSITIONS */
       {
@@ -136,9 +161,17 @@ function init() {
           borderBottom(next.container)
         }
       },
-
-
-      /** ABOUT TRANSITIONS */
+      {
+        name: 'home-to-contact',
+        from: { namespace: ['home'] },
+        to: { namespace: ['contact'] },
+        leave: ({ current }) => { return homeLeave(current.container) },
+        enter({ next }) {
+          contactEnter(next.container)
+          borderBottom(next.container)
+        }
+      },
+      // /** ABOUT TRANSITIONS */
       {
         name: 'to-about',
         to: { namespace: ['about'] },
@@ -174,6 +207,16 @@ function init() {
         leave: ({ current }) => { return aboutLeave(current.container) },
         enter({ next }) {
           businessEnter(next.container)
+          borderBottom(next.container)
+        }
+      },
+      {
+        name: 'about-to-contact',
+        from: { namespace: ['about'] },
+        to: { namespace: ['contact'] },
+        leave: ({ current }) => { return aboutLeave(current.container) },
+        enter({ next }) {
+          contactEnter(next.container)
           borderBottom(next.container)
         }
       },
@@ -221,7 +264,18 @@ function init() {
           borderBottom(next.container)
         }
       },
-      /** BUSINESS TRANSITIONS */
+      {
+        name: 'artists-to-contact',
+        from: { namespace: ['artists'] },
+        to: { namespace: ['contact'] },
+        leave: ({ current }) => { return artistLeave(current.container) },
+        enter({ next }) {
+          contactEnter(next.container)
+          borderBottom(next.container)
+        }
+      },
+
+      // /** BUSINESS TRANSITIONS */
       {
         name: 'to-business',
         to: { namespace: ['business'] },
@@ -259,10 +313,61 @@ function init() {
         name: 'business-to-home',
         from: { namespace: ['business'] },
         to: { namespace: ['home'] },
-        // once({next}) {homeEnter(next.container)},
         leave: ({ current }) => { return businessLeave(current.container) },
         enter({ next }) { homeEnter(next.container) }
+      },
+      {
+        name: 'business-to-contact',
+        from: { namespace: ['business'] },
+        to: { namespace: ['contact'] },
+        leave: ({ current }) => { return businessLeave(current.container) },
+        enter({ next }) {
+          contactEnter(next.container)
+          borderBottom(next.container)
+        }
+      },
+
+      // /** Contact TRANSITIONS */
+      {
+      name: 'to-contact',
+      to: { namespace: ['contact'] },
+      once({ next }) {
+        gsap.to('.site-header', {
+          autoAlpha: 1
+        })
+        contactEnter(next.container)
+        borderBottom(next.container)
+      },
+      leave: ({ current }) => { return contactLeave(current.container) },
+      enter({ next }) { contactEnter(next.container) }
+    },
+    {
+      name: 'contact-to-about',
+      from: { namespace: ['contact'] },
+      to: { namespace: ['about'] },
+      leave: ({ current }) => { return contactLeave(current.container) },
+      enter({ next }) {
+        aboutEnter(next.container)
+        borderBottom(next.container)
       }
+    },
+    {
+      name: 'contact-to-artists',
+      from: { namespace: ['contact'] },
+      to: { namespace: ['artists'] },
+      leave: ({ current }) => { return contactLeave(current.container) },
+      enter({ next }) {
+        artistEnter(next.container)
+        borderBottom(next.container)
+      }
+    },
+    {
+      name: 'contact-to-home',
+      from: { namespace: ['contact'] },
+      to: { namespace: ['home'] },
+      leave: ({ current }) => { return contactLeave(current.container) },
+      enter({ next }) { homeEnter(next.container) }
+          },
     ]
   });
 
@@ -270,9 +375,9 @@ function init() {
   // const openModal = document.querySelector(".open-modal")
   // const closeModalBtn = document.querySelector(".modal__close")
 
-  modal.addEventListener('click', hideModal)
-  openModal.addEventListener('click', showModal)
-  closeModalBtn.addEventListener('click', hideModal)
+  // modal.addEventListener('click', hideModal)
+  // openModal.addEventListener('click', showModal)
+  // closeModalBtn.addEventListener('click', hideModal)
 
 }
 

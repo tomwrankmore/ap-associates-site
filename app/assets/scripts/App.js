@@ -15,6 +15,16 @@ import { showModal, hideModal, homeEnter, homeLeave, aboutEnter, aboutLeave, art
 new MobileMenu();
 // new MyModal();
 
+let menuIcon = document.querySelector(".site-header__menu-icon")
+let menuContent = document.querySelector(".site-header__menu-content")
+let siteHeader = document.querySelector(".site-header")
+
+function toggleTheMenu() {
+  menuContent.classList.remove("site-header__menu-content--is-visible")
+  siteHeader.classList.remove("site-header--is-expanded") 
+  menuIcon.classList.remove("site-header__menu-icon--close-x")
+}
+
 // hot modules means that webpack generates javascript file to memory rather than creating a file...
 if (module.hot) {
   module.hot.accept()
@@ -30,7 +40,7 @@ function init() {
   // scroll to the top of the page
   barba.hooks.enter(({ next }) => {
     window.scrollTo(0, 0);
-
+    toggleTheMenu()
   })
 
   function killTriggers() {

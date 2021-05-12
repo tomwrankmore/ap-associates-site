@@ -31,7 +31,7 @@ const artistEnter = (container) => {
             },
             scrollTrigger: {
                 trigger: card,
-                start: "top 65%",  // start timeline when top of content is 100px above bottom of browser window
+                start: "top 75%",  // start timeline when top of content is 100px above bottom of browser window
                 end: "bottom top", // bottom of content is 20% from the t op of browser window
                 scroller: scrollContainer,
                 toggleActions: "play none none none",

@@ -8,6 +8,7 @@ section.about {
     width: 75%;
     padding: 0;
     height: 50vh;
+    height: auto;
   }
   
   display: flex;
@@ -29,5 +30,41 @@ section.about {
     padding: 0 2rem;
     margin-bottom: 1rem;
     text-align: center;
+  }
+
+
+}
+
+/* New rules */
+
+section.about-new {
+  margin-top: 70px;
+  padding: 70px 0;
+}
+
+.about-new__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  h1 {
+    width: 100%;
+    /* text-decoration: underline; */
+    text-align: center;
+    @mixin atMedium {
+      text-align: left;
+    }
+  }
+
+  p {
+    width: 100%;
+    padding: 0 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    @mixin atMedium {
+      width: 65%;
+      text-align: left;
+      padding: 0;
+    }
   }
 }

@@ -115,18 +115,6 @@ function init() {
           });
         }
       },
-      {
-          name: 'to-home',
-          to: { namespace: ['home'] },
-          once({ next }) {
-            gsap.to('.site-header', {
-              autoAlpha: 1
-            })
-            landingPageAnim(next.container)
-          },
-          leave: ({ current }) => { return homeLeave(current.container) },
-          enter({ next }) { homeEnter(next.container) }
-        },
 
       /** HOME TRANSITIONS */
       {

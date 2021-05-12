@@ -39,7 +39,7 @@ section.about {
 
 section.about-new {
   margin-top: 70px;
-  padding: 70px 0;
+  padding: 100px 0;
 }
 
 .about-new__flex {
@@ -62,7 +62,7 @@ section.about-new {
     text-align: center;
     margin-bottom: 1rem;
     @mixin atMedium {
-      width: 65%;
+      width: 75%;
       text-align: left;
       padding: 0;
     }

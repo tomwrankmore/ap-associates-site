@@ -1,5 +1,9 @@
 section.artists {
-  padding: 140px 0 70px 0;
+  padding: 70px 0 70px 0;
+  
+  @mixin atSmall {
+    padding: 140px 0 70px 0;
+  }
 }
 
 .artist-grid {

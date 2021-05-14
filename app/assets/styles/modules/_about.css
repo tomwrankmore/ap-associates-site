@@ -38,8 +38,11 @@ section.about {
 /* New rules */
 
 section.about-new {
-  margin-top: 70px;
+  margin-top: 0;
   padding: 100px 0;
+  @mixin atMedium {
+    margin-top: 70px;
+  }
 }
 
 .about-new__flex {

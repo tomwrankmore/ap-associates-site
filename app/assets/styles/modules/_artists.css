@@ -1,5 +1,5 @@
 section.artists {
-  padding: 70px 0 70px 0;
+  padding: 6rem 0;
   
   @mixin atSmall {
     padding: 140px 0 70px 0;

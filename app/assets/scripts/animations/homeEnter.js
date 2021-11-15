@@ -27,9 +27,6 @@ const homeEnter = function(container) {
     .from(introHeadingLines, {
       y:"300",
       autoAlpha: 0,
-      // stagger: {
-      //   amount: 2
-      // }
     }, "<")
 
     return tl

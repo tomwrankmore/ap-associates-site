@@ -30,43 +30,43 @@ const landingPageAnim = function (container) {
     chars = overlayHeaderSplit.chars //an array of all the divs that wrap each character 
 
   tl
-    .from(chars, {
-      y: 20,
-      opacity: 0,
-      ease: "back",
-      stagger: {
-        amount: 0.1,
-        duration: 1.2
-      }
-    })
-    .to(chars, {
-      y: -80,
-      opacity: 0,
-      delay: 1,
-      ease: "expo.inOut",
-      stagger: {
-        amount: 0.1,
-        duration: 1.2
-      },
-      onComplete: () => {
-        overlayHeaderSplit.revert()
-      }
-    })
-    .to(".blackOverlay", {
-      yPercent: -101,
-      duration: 1,
-      ease: "expo.inOut"
-    }, "<")
-    .from('.slider', {
-      scale: 1.6,
-      duration: 1.875
-    }, "-=0.5")
-    .from(".introHeading", {
-      y: '150px',
-      duration: 1.2,
-      autoAlpha: 0,
-      ease: "power4.out"
-    }, "<")
+  .from('.slider', {
+    scale: 1.6,
+    duration: 1.875
+  })
+    // .from(chars, {
+    //   y: 20,
+    //   opacity: 0,
+    //   ease: "back",
+    //   stagger: {
+    //     amount: 0.1,
+    //     duration: 1.2
+    //   }
+    // })
+    // .to(chars, {
+    //   y: -80,
+    //   opacity: 0,
+    //   delay: 1,
+    //   ease: "expo.inOut",
+    //   stagger: {
+    //     amount: 0.1,
+    //     duration: 1.2
+    //   },
+    //   onComplete: () => {
+    //     overlayHeaderSplit.revert()
+    //   }
+    // })
+    // .to(".blackOverlay", {
+    //   yPercent: -101,
+    //   duration: 1,
+    //   ease: "expo.inOut"
+    // }, "<")
+    // .from(".introHeading", {
+    //   y: '150px',
+    //   duration: 1.2,
+    //   autoAlpha: 0,
+    //   ease: "power4.out"
+    // }, "<")
 
 
   return tl

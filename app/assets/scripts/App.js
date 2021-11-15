@@ -13,7 +13,6 @@ import { smoothScroll, MouseFollow, borderBottom, landingPageAnim, splitParagrap
 import { showModal, hideModal, homeEnter, homeLeave, aboutEnter, aboutLeave, artistEnter, artistLeave, businessEnter, businessLeave, contactEnter, contactLeave } from './animations'; /* Import animation functions */
 
 new MobileMenu();
-// new MyModal();
 
 const menuIcon = document.querySelector(".site-header__menu-icon")
 const menuContent = document.querySelector(".site-header__menu-content")

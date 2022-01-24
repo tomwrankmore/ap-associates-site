@@ -43,3 +43,12 @@ p {
   line-height: 1.6rem;
   font-size: 0.875rem;
 }
+
+h1 {
+  font-size: 3rem;
+}
+
+h1, h2 {
+  margin: 0;
+  font-weight: lighter;
+}

@@ -1,7 +1,7 @@
 import '../styles/styles.css'
 import 'lazysizes'
 import './modules/slider2'
-import LocomotiveScroll from 'locomotive-scroll';
+// import LocomotiveScroll from 'locomotive-scroll';
 import barba from '@barba/core';
 import barbaPrefetch from '@barba/prefetch';
 import { gsap } from "gsap";
@@ -9,8 +9,32 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import Cursor from './modules/cursor';
 
-import { smoothScroll, MouseFollow, borderBottom, landingPageAnim, splitParagraph, MyMobileMenu, MobileMenu, Modal, MyModal, sliderFunc } from './modules'; /* Import animation functions */
-import { showModal, hideModal, homeEnter, homeLeave, aboutEnter, aboutLeave, artistEnter, artistLeave, businessEnter, businessLeave, contactEnter, contactLeave } from './animations'; /* Import animation functions */
+import { 
+  // smoothScroll, 
+  MouseFollow, 
+  borderBottom, 
+  landingPageAnim, 
+  splitParagraph, 
+  MyMobileMenu, 
+  MobileMenu, 
+  Modal, 
+  MyModal, 
+  sliderFunc 
+} from './modules'; /* Import animation functions */
+import { 
+  showModal, 
+  hideModal, 
+  homeEnter, 
+  homeLeave, 
+  aboutEnter, 
+  aboutLeave, 
+  artistEnter, 
+  artistLeave, 
+  businessEnter, 
+  businessLeave, 
+  contactEnter, 
+  contactLeave 
+} from './animations'; /* Import animation functions */
 
 new MobileMenu();
 
@@ -58,14 +82,14 @@ function init() {
         beforeEnter({ next }) {
           sliderFunc(next.container)
           killTriggers()
-          smoothScroll(next.container);
+          // smoothScroll(next.container);
         }
       },
       {
         namespace: 'artists',
         beforeEnter({ next }) {
           killTriggers()
-          smoothScroll(next.container);
+          // smoothScroll(next.container);
           splitParagraph(next.container)
         }
       },
@@ -73,7 +97,7 @@ function init() {
         namespace: 'business',
         beforeEnter({ next }) {
           killTriggers()
-          smoothScroll(next.container);
+          // smoothScroll(next.container);
           splitParagraph(next.container)
         }
       },
@@ -81,7 +105,7 @@ function init() {
         namespace: 'about',
         beforeEnter({ next }) {
           killTriggers()
-          smoothScroll(next.container);
+          // smoothScroll(next.container);
           splitParagraph(next.container)
         }
       },
@@ -89,7 +113,7 @@ function init() {
         namespace: 'contact',
         beforeEnter({ next }) {
           killTriggers()
-          smoothScroll(next.container);
+          // smoothScroll(next.container);
           splitParagraph(next.container)
         }
       }

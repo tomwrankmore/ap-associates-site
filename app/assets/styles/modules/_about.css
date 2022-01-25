@@ -50,11 +50,10 @@ section.about-new {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 0 4rem;
+  padding: 0;
 
   @mixin atMedium {
     flex-direction: row;
-    padding: 0;
   }
 
   h1 {

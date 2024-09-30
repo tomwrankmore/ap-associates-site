@@ -1,268 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-119151732-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119151732-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag("config", "UA-119151732-2");
+    </script>
+    <!-- encoding -->
+    <meta charset="utf-8" />
 
-    gtag('config', 'UA-119151732-2');
-  </script>
-  <!-- encoding -->
-  <meta charset="utf-8">
+    <!-- title -->
+    <title>AP.Associates</title>
 
-  <!-- title -->
-  <title>AP.Associates</title>
+    <!-- description -->
+    <meta
+      name="description"
+      content="London based legal & business affairs consultancy for the music industry"
+    />
 
-  <!-- description -->
-  <meta name="description" content="London based legal & business affairs consultancy for the music industry">
+    <!-- viewport -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
 
-  <!-- viewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <!-- favicon -->
+    <link href="./assets/images/gfx/favicon.png" rel="icon" sizes="192x192" />
 
-  <!-- favicon -->
-  <link href="./assets/images/gfx/favicon.png" rel="icon" sizes="192x192">
+    <!-- graph -->
+    <meta property="og:url" content="http://ap.associates/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AP Associates" />
+    <meta
+      property="og:image"
+      content="http://ap.associates/assets/images/gfx/share.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:description"
+      content="London based legal & business affairs consultancy for the music industry"
+    />
+    <meta property="og:site_name" content="AP Associates" />
+    <meta property="og:locale" content="en_GB" />
 
-  <!-- graph -->
-  <meta property="og:url" content="http://ap.associates/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="AP Associates">
-  <meta property="og:image" content="http://ap.associates/assets/images/gfx/share.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:description" content="London based legal & business affairs consultancy for the music industry">
-  <meta property="og:site_name" content="AP Associates">
-  <meta property="og:locale" content="en_GB">
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="http://ap.associates/" />
+    <meta name="twitter:title" content="AP ASSOCIATES" />
+    <meta
+      name="twitter:description"
+      content="London based legal & business affairs consultancy for the music industry"
+    />
+    <meta name="twitter:image" content="http://ap.associates/gfx/share.png" />
 
-  <!-- twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="http://ap.associates/">
-  <meta name="twitter:title" content="AP ASSOCIATES">
-  <meta name="twitter:description" content="London based legal & business affairs consultancy for the music industry">
-  <meta name="twitter:image" content="http://ap.associates/gfx/share.png">
+    <!-- robot -->
+    <meta name="robots" content="index,follow,noodp" />
+    <meta name="googlebot" content="index,follow" />
 
-  <!-- robot -->
-  <meta name="robots" content="index,follow,noodp">
-  <meta name="googlebot" content="index,follow">
+    <!-- outdated -->
+    <!--[if lte IE 9
+      ]><meta http-equiv="refresh" content="0;URL='http://outdatedbrowser.com'"
+    /><![endif]-->
 
-  <!-- outdated -->
-  <!--[if lte IE 9]><meta http-equiv="refresh" content="0;URL='http://outdatedbrowser.com'"><![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
-</head>
-
-<body data-barba="wrapper">
-
-
-  <header class="site-header">
-    <div class="wrapper">
-      <h1 class="site-header__logo"><a href="index.html">AP.ASSOCIATES</a></h1>
-      <button class="site-header__menu-icon"><svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="xMidYMid" width="1em" height="1em">
-          <path d="M5 7.5H20" stroke="#000" style="vector-effect: non-scaling-stroke;" />
-          <path d="M5 12.5H20" stroke="#000" style="vector-effect: non-scaling-stroke;" />
-          <path d="M5 17.5H20" stroke="#000" style="vector-effect: non-scaling-stroke;" />
-        </svg>
-      </button>
-      <div class="site-header__menu-content">
-        <nav class="primary-nav primary-nav--pull-right">
-          <ul>
-            <li><a href="about.html">about</a></li>
-            <li><a href="#" aria-haspopup="true" class="down-arrow">clients</a>
-              <ul class="nested">
-                <li><a href="artists.html">artists</a></li>
-                <li><a href="business.html">businesses</a></li>
-              </ul>
-            </li>
-            <li><a href="contact.html">contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-  <div data-barba="container" data-barba-namespace="business">
-    <!-- <div class="scrollContainer" data-scroll-container> -->
-    <section class="business">
+  <body data-barba="wrapper">
+    <header class="site-header">
       <div class="wrapper">
-        <article class="intro-text">
-          <h1>Businesses</h1>
-          <div class="border-bottom"></div>
-        </article>
-        <ul class="business-grid">
-          <li class="business-box">
-            <a href="https://warp.net/" target="_blank">
-              <img src="assets/images/business/Warp.png" alt="Warp Records" class="business-logo">
-            </a>
-            <h3>Warp</h3>
-          </li>
-
-          <li class="business-box">
-            <a href="https://www.mixcloud.com/" target="_blank">
-              <img src="assets/images/business/mixcloud.png" alt="Mixcloud" class="business-logo">
-            </a>
-            <h3>Mixcloud</h3>
-          </li>
-
-          <li class="business-box">
-            <a href="https://boilerroom.tv/" target="_blank">
-              <img src="assets/images/business/boiler-room.png" alt="Boiler Room" class="business-logo">
-            </a>
-            <h3>Boiler Room</h3>
-          </li>
-
-          <li class="business-box">
-            <a href="https://ra.co/" target="_blank">
-              <img src="assets/images/business/ra.png" alt="Resident Advisor" class="business-logo">
-            </a>
-            <h3>Resident Advisor</h3>
-          </li>
-
-          <li class="business-box">
-            <a href="https://thevinylfactory.com/" target="_blank">
-              <img src="assets/images/business/The_Vinyl_Factory_Logo.png" alt="Vinyl Factory" class="business-logo">
-            </a>
-            <h3>Vinyl Factory</h3>
-          </li>
-
-          <li class="business-box">
-            <a href="https://www.onehouseartists.com/" target="_blank">
-              <img src="assets//images//business/one-house-new.png" alt="One House Artists" class="business-logo">
-            </a>
-            <h3>One House</h3>
-          </li>
-
-          <li class="business-box">
-            <a href="https://bleep.com/" target="_blank">
-              <img src="assets//images//business/Bleep-logo.png" alt="One House Artists" class="business-logo">
-            </a>
-            <h3>Bleep</h3>
-          </li>
-
-          <li class="business-box">
-            <a href="https://ochre.net/" target="_blank">
-              <img src="assets//images//business/ochre-logo-2000.jpeg" alt="One House Artists" class="business-logo">
-            </a>
-            <h3>Ochre</h3>
-          </li>
-          
-          <li class="business-box">
-            <a href="https://radio.polaroid.com/" target="_blank">
-              <img src="assets//images//business/polaroidradiol.png" alt="Polaroid Radio" class="business-logo">
-            </a>
-            <h3>Polaroid Radio</h3>
-          </li>
-
-          <li class="business-box">
-            <a href="https://www.insanitygroup.com/" target="_blank">
-              <img src="assets/images/business/INSANITY.png" alt="Insanity Group" class="business-logo">
-            </a>
-            <h3>Insanity Group</h3>
-          </li>
-
-          <li class="business-box">
-            <a href="https://www.insanitygroup.com/orbit-talent/" target="_blank">
-              <img src="assets/images/business/Orbit.png" alt="Orbit Talent" class="business-logo">
-            </a>
-            <h3>Orbit Talent</h3>
-          </li>
-
-          <li class="business-box">
-            <a href="https://www.locotalent.co.uk/" target="_blank">
-              <img src="assets/images/business/Loco.png" alt="Loco Talent" class="business-logo">
-            </a>
-            <h3>Loco Talent</h3>
-          </li>
-
-          <li class="business-box">
-            <a href="https://endlessloveshow.com/" target="_blank">
-              <img src="assets/images/business/endless.png" alt="Endless Loveshow" class="business-logo">
-            </a>
-            <h3>Endless Loveshow</h3>
-          </li>
-
-          <li class="business-box">
-            <a href="http://www.touchingbass.co.uk/" target="_blank">
-              <img src="assets/images/business/touchingbass.png" alt="Touching Bass" class="business-logo">
-            </a>
-            <h3>Touching Bass</h3>
-          </li>
-
-          <li class="business-box">
-            <a href="https://luakabop.com/" target="_blank">
-              <img src="assets/images/business/LuakaBop.png" alt="Luaka Bop" class="business-logo">
-            </a>
-            <h3>Luaka Bop</h3>
-          </li>
-
-          <li class="business-box">
-            <a href="https://www.melodiesinternational.com/" target="_blank">
-              <img src="assets/images/business/melodies.png" alt="Melodies International" class="business-logo">
-            </a>
-            <h3>Melodies International</h3>
-          </li>
-
-          <li class="business-box">
-            <a href="https://time-capsule.space/" target="_blank">
-              <img src="assets/images/business/timecapsule.png" alt="Time Capsule" class="business-logo">
-            </a>
-            <h3>Time Capsule</h3>
-          </li>
-
-          <li class="business-box">
-            <a href="https://nyx-edc.com/" target="_blank">
-              <img src="assets/images/business/nyx.png" alt="NYX" class="business-logo">
-            </a>
-            <h3>NYX</h3>
-          </li>
-
-          <li class="business-box">
-            <a href="https://nativerebelrecordings.co.uk/" target="_blank">
-              <img src="assets/images/business/native-rebel.png" alt="Native Rebel Recordings" class="business-logo">
-            </a>
-            <h3>Native Rebel Recordings</h3>
-          </li>
-
-          <li class="business-box">
-            <a href="https://www.push.live/" target="_blank">
-              <img src="assets/images/business/push.png" alt="Push Live" class="business-logo">
-            </a>
-            <h3>Push</h3>
-          </li>
-
-          <li class="business-box">
-            <a href="https://spliceapp.com/" target="_blank">
-              <img src="assets/images/business/splice.png" alt="Splice" class="business-logo">
-            </a>
-            <h3>Splice</h3>
-          </li>
-
-          <li class="business-box">
-            <a href="https://www.nightdreamer.co.uk/" target="_blank">
-              <img src="assets/images/business/nightdreamer.png" alt="Night Dreamer" class="business-logo">
-            </a>
-            <h3>Night Dreamer</h3>
-          </li>
-        </ul>
+        <h1 class="site-header__logo">
+          <a href="index.html">AP.ASSOCIATES</a>
+        </h1>
+        <button class="site-header__menu-icon">
+          <svg
+            viewBox="0 0 25 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid"
+            width="1em"
+            height="1em"
+          >
+            <path
+              d="M5 7.5H20"
+              stroke="#000"
+              style="vector-effect: non-scaling-stroke"
+            />
+            <path
+              d="M5 12.5H20"
+              stroke="#000"
+              style="vector-effect: non-scaling-stroke"
+            />
+            <path
+              d="M5 17.5H20"
+              stroke="#000"
+              style="vector-effect: non-scaling-stroke"
+            />
+          </svg>
+        </button>
+        <div class="site-header__menu-content">
+          <nav class="primary-nav primary-nav--pull-right">
+            <ul>
+              <li><a href="about.html">about</a></li>
+              <li>
+                <a href="#" aria-haspopup="true" class="down-arrow">clients</a>
+                <ul class="nested">
+                  <li><a href="artists.html">artists</a></li>
+                  <li><a href="business.html">businesses</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </section>
-    <!-- </div> -->
-  </div>
+    </header>
 
-  <footer>
-    <div class="wrapper wrapper__footer">
-      <p>AP.ASSOCIATES is the trading name for Speak No Evil Limited, a limited company registered in England and Wales
-        (registered number 10810614). Registered office: 2 Burton House Repton Place, White Lion Road, Amersham,
-        Buckinghamshire, England, HP7 9LP. VAT number 367722569. AP.ASSOCIATES is a legal & business affairs consultancy
-        as opposed to a solicitors’ practice, and is not regulated by the Solicitor’s Regulation Authority.</p>
+    <div data-barba="container" data-barba-namespace="business">
+      <!-- <div class="scrollContainer" data-scroll-container> -->
+      <section class="business">
+        <div class="wrapper">
+          <article class="intro-text">
+            <h1>Businesses</h1>
+            <div class="border-bottom"></div>
+          </article>
+          <ul class="business-grid">
+            <li class="business-box">
+              <a href="https://warp.net/" target="_blank">
+                <img
+                  src="assets/images/business/Warp.png"
+                  alt="Warp Records"
+                  class="business-logo"
+                />
+              </a>
+              <h3>Warp</h3>
+            </li>
+
+            <li class="business-box">
+              <a href="https://www.mixcloud.com/" target="_blank">
+                <img
+                  src="assets/images/business/mixcloud.png"
+                  alt="Mixcloud"
+                  class="business-logo"
+                />
+              </a>
+              <h3>Mixcloud</h3>
+            </li>
+
+            <li class="business-box">
+              <a href="https://boilerroom.tv/" target="_blank">
+                <img
+                  src="assets/images/business/boiler-room.png"
+                  alt="Boiler Room"
+                  class="business-logo"
+                />
+              </a>
+              <h3>Boiler Room</h3>
+            </li>
+
+            <li class="business-box">
+              <a href="https://ra.co/" target="_blank">
+                <img
+                  src="assets/images/business/ra.png"
+                  alt="Resident Advisor"
+                  class="business-logo"
+                />
+              </a>
+              <h3>Resident Advisor</h3>
+            </li>
+
+            <li class="business-box">
+              <a href="https://thevinylfactory.com/" target="_blank">
+                <img
+                  src="assets/images/business/The_Vinyl_Factory_Logo.png"
+                  alt="Vinyl Factory"
+                  class="business-logo"
+                />
+              </a>
+              <h3>Vinyl Factory</h3>
+            </li>
+
+            <li class="business-box">
+              <a href="https://www.onehouseartists.com/" target="_blank">
+                <img
+                  src="assets//images//business/one-house-new.png"
+                  alt="One House Artists"
+                  class="business-logo"
+                />
+              </a>
+              <h3>One House</h3>
+            </li>
+
+            <li class="business-box">
+              <a href="https://bleep.com/" target="_blank">
+                <img
+                  src="assets//images//business/Bleep-logo.png"
+                  alt="One House Artists"
+                  class="business-logo"
+                />
+              </a>
+              <h3>Bleep</h3>
+            </li>
+
+            <li class="business-box">
+              <a href="https://waxpoetics.com/" target="_blank">
+                <img
+                  src="assets//images//business/WaxPoetics.jpg"
+                  alt="Wax Poetics"
+                  class="business-logo"
+                />
+              </a>
+              <h3>Wax Poetics</h3>
+            </li>
+
+            <li class="business-box">
+              <a href="https://www.koko.co.uk/" target="_blank">
+                <img
+                  src="assets/images/business/KOKO.png"
+                  alt="KOKO"
+                  class="business-logo"
+                />
+              </a>
+              <h3>KOKO</h3>
+            </li>
+
+            <li class="business-box">
+              <a href="https://www.luckyme.net/" target="_blank">
+                <img
+                  src="assets/images//business/LuckyMe.jpg"
+                  alt="Lucky Me"
+                  class="business-logo"
+                />
+              </a>
+              <h3>LuckyMe</h3>
+            </li>
+
+            <li class="business-box">
+              <a href="https://pampam.studio/" target="_blank">
+                <img
+                  src="assets/images//business/PAMPAM.png"
+                  alt="PAM PAM"
+                  class="business-logo"
+                />
+              </a>
+              <h3>PAM PAM</h3>
+            </li>
+
+            <li class="business-box">
+              <a href="https://roli.com/" target="_blank">
+                <img
+                  src="assets/images//business/ROLI.jpg"
+                  alt="roli"
+                  class="business-logo"
+                />
+              </a>
+              <h3>ROLI</h3>
+            </li>
+
+            <li class="business-box">
+              <a href="https://aotns.bandcamp.com/" target="_blank">
+                <img
+                  src="assets/images//business/AthensOfTheNorth.png"
+                  alt="Athens Of The North"
+                  class="business-logo"
+                />
+              </a>
+              <h3>Athens Of The North</h3>
+            </li>
+
+            <li class="business-box">
+              <a href="https://ad93.ltd/" target="_blank">
+                <img
+                  src="assets/images//business/AD93.jpg"
+                  alt="AD93"
+                  class="business-logo"
+                />
+              </a>
+              <h3>AD93</h3>
+            </li>
+
+            <li class="business-box">
+              <a href="https://invisiblecityeditions.com/" target="_blank">
+                <img
+                  src="assets/images//business/InvisibleCity.jpg"
+                  alt="Invisible City"
+                  class="business-logo"
+                />
+              </a>
+              <h3>Invisible City</h3>
+            </li>
+
+            <li class="business-box">
+              <a href="https://ochre.net/" target="_blank">
+                <img
+                  src="assets/images//business/ochre-logo-2000.jpeg"
+                  alt="One House Artists"
+                  class="business-logo"
+                />
+              </a>
+              <h3>Ochre</h3>
+            </li>
+
+            <li class="business-box">
+              <a href="https://radio.polaroid.com/" target="_blank">
+                <img
+                  src="assets/images/business/polaroidradiol.png"
+                  alt="Polaroid Radio"
+                  class="business-logo"
+                />
+              </a>
+              <h3>Polaroid Radio</h3>
+            </li>
+
+            <li class="business-box">
+              <a href="https://endlessloveshow.com/" target="_blank">
+                <img
+                  src="assets/images/business/endless.png"
+                  alt="Endless Loveshow"
+                  class="business-logo"
+                />
+              </a>
+              <h3>Endless Loveshow</h3>
+            </li>
+
+            <li class="business-box">
+              <a href="http://www.touchingbass.co.uk/" target="_blank">
+                <img
+                  src="assets/images/business/touchingbass.png"
+                  alt="Touching Bass"
+                  class="business-logo"
+                />
+              </a>
+              <h3>Touching Bass</h3>
+            </li>
+
+            <li class="business-box">
+              <a href="https://luakabop.com/" target="_blank">
+                <img
+                  src="assets/images/business/LuakaBop.png"
+                  alt="Luaka Bop"
+                  class="business-logo"
+                />
+              </a>
+              <h3>Luaka Bop</h3>
+            </li>
+
+            <li class="business-box">
+              <a href="https://www.melodiesinternational.com/" target="_blank">
+                <img
+                  src="assets/images/business/melodies.png"
+                  alt="Melodies International"
+                  class="business-logo"
+                />
+              </a>
+              <h3>Melodies International</h3>
+            </li>
+
+            <li class="business-box">
+              <a href="https://time-capsule.space/" target="_blank">
+                <img
+                  src="assets/images/business/timecapsule.png"
+                  alt="Time Capsule"
+                  class="business-logo"
+                />
+              </a>
+              <h3>Time Capsule</h3>
+            </li>
+
+            <li class="business-box">
+              <a href="https://nativerebelrecordings.co.uk/" target="_blank">
+                <img
+                  src="assets/images/business/native-rebel.png"
+                  alt="Native Rebel Recordings"
+                  class="business-logo"
+                />
+              </a>
+              <h3>Native Rebel Recordings</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- </div> -->
     </div>
-  </footer>
-</body>
 
+    <footer>
+      <div class="wrapper wrapper__footer">
+        <p>
+          AP.ASSOCIATES is the trading name for Speak No Evil Limited, a limited
+          company registered in England and Wales (registered number 10810614).
+          Registered office: 2 Burton House Repton Place, White Lion Road,
+          Amersham, Buckinghamshire, England, HP7 9LP. VAT number 367722569.
+          AP.ASSOCIATES is a legal & business affairs consultancy as opposed to
+          a solicitors’ practice, and is not regulated by the Solicitor’s
+          Regulation Authority.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
